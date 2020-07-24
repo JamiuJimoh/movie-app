@@ -1,0 +1,30 @@
+<%- include("partials/header")-%>
+
+<div class="ui main text container segment">
+    <div class="ui huge header"><%=movie['Title']%></div>
+    <div class="ui top attached">
+        <div class="item">
+            <img class="ui centered rounded image" src="<%=movie['Poster']%>" alt="">
+            <div class="content">
+                <p><strong>Year</strong> - <%=movie['Year']%></p>
+                <p><strong>Rated</strong> - <%=movie['Rated']%></p>
+                <p><strong>Released date</strong> - <%=movie['Released']%></p>
+                <p><strong>Runtime</strong> - <%=movie['Runtime']%></p>
+                <p><strong>Genre</strong> - <%=movie['Genre']%></p>
+                <p><strong>Director</strong> - <%=movie['Director']%></p>
+                <p><strong>Writers</strong> - <%=movie['Writer']%></p>
+                <p><strong>Actors</strong> - <%=movie['Actors']%></p>
+                <p><strong>Plot</strong> - <%=movie['Plot']%></p>
+                <p><strong>Language</strong> - <%=movie['Language']%></p>
+                <h3><strong>RATINGS</strong></h3>
+                <p> <strong>SOURCES</strong>  ---------------------------------------------------<strong>RATINGS</strong>  </p>
+                <% movie["Ratings"].forEach(function(rating){%>
+                   <div> <%=rating["Source"]%> -------------------------------------- <%=rating["Value"]%></div>
+                 <%})%>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <%- include("partials/footer")-%>
+

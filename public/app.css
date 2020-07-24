@@ -1,0 +1,48 @@
+body {
+	background-image: url("timothy-eberly-dTLlhgeEJWg-unsplash.jpg");
+	min-height: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin-top: auto;
+}
+
+.ui.raised.container.segment {
+	left: 25%;
+	right: 25%;
+	top: 50%;
+	position: absolute;
+	margin-left: -350px;
+	margin-top: -150px;
+}
+
+.ui.huge.header {
+	color: rgb(94, 94, 94);
+}
+
+.ui.huge.header.search {
+	color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+	.ui.raised.container.segment {
+		left: 2.4px;
+		right: 5.6px;
+		top: 50%;
+		position: absolute;
+		margin-left: -350px;
+		margin-top: -150px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.ui.raised.container.segment {
+		left: 3.2px;
+		right: 4.8px;
+		top: 50%;
+		position: absolute;
+		margin-left: -350px;
+		margin-top: -150px;
+	}
+}

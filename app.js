@@ -42,6 +42,4 @@ app.get('/movies/:id', function(req, res) {
 	getMovie(url);
 });
 
-app.listen(3000, function() {
-	console.log('Movie App has started');
-});
+app.listen(process.env.PORT || 5000);

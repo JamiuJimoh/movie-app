@@ -4,12 +4,8 @@
 	"description": "async test",
 	"main": "app.js",
 	"scripts": {
-<<<<<<< HEAD
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node app.js"
-=======
-		"test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 75beaa211e1e79f38a4ce34e53b4390639821423
 	},
 	"author": "Jamiu",
 	"license": "ISC",

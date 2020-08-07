@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
 	background-image: url("timothy-eberly-dTLlhgeEJWg-unsplash.jpg");
 	min-height: 100%;
@@ -6,3 +7,13 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
+=======
+body {
+	background-image: url("timothy-eberly-dTLlhgeEJWg-unsplash.jpg");
+	min-height: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+>>>>>>> 75beaa211e1e79f38a4ce34e53b4390639821423

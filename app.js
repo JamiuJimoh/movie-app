@@ -30,18 +30,23 @@ app.get('/movies', function(req, res) {
 // SHOW ROUTE
 app.get('/movies/:id', function(req, res) {
 	const query = req.params.id;
-	const url = `http://www.omdbapi.com/?apikey=thewdb&i=${query}&plot=full`;
-	const getMovie = async (url) => {
+	const getMovie = async () => {
 		try {
-			const response = await axios.get(url);
+			const response = await axios.get('http://www.omdbapi.com/', {
+				params: {
+					apikey: 'thewdb',
+					i: `${query}`,
+					plot: 'full'
+				}
+			});
 			res.render('show', { movie: response.data });
 		} catch (err) {
 			res.send(err.message);
 		}
 	};
-	getMovie(url);
+	getMovie();
 });
 
-app.listen(3000, function() {
-	console.log('Movie App has started');
-});
+const port = process.env.PORT || 3000;
+const ip = process.env.IP || '0.0.0.0';
+app.listen(port, ip);
